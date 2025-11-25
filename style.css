@@ -7,4 +7,82 @@ body{
 html, body{
     height: 100%;
     width: 100%;
+    color: #f0e7e7;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #131310;
+}
+
+section{
+    height: 100%;
+    width: 350px;
+    background-color: black;
+    margin: auto;
+}
+
+.all-reels{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: bisque;
+    border-radius: 10px;
+    
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.reel-img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.bottom{
+    width: 100%;
+    padding: 30px 20px;
+    position: absolute;
+    bottom: 0;
+
+    
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.user img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user button{
+    padding: 0.2rem 0.4rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.right{
+    transform: translate(100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.right i{
+   font-size: 1.4rem
 }
