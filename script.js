@@ -133,7 +133,7 @@ reels.forEach(function(elem) {
                         <div class="user">
                             <img src="${elem.userImg}">
                             <h4>${elem.username}</h4>
-                            <button>Suscribe</button>
+                            <button>Follow</button>
                         </div>
                          <h3>${elem.caption}</h3>
                     </div>
