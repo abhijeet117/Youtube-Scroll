@@ -12,40 +12,63 @@ html, body{
 
 html{
     font-family: "Poppins", sans-serif;
+    background-color: #131310;
 }
 
 #main{
     height: 100%;
     width: 100%;
     background-color: #131310;
+    overflow: auto;
 }
 
 section{
     height: 100%;
-    width: 350px;
+    width: 450px;
     background-color: black;
     margin: auto;
+    
 }
 
 .all-reels{
     height: 100%;
     width: 100%;
-    /* overflow: hidden; */
-    background-color: bisque;
+    overflow: auto;
+    background-color: #131310;
     border-radius: 10px;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
     
+}
+
+.all-reels::-webkit-scrollbar{
+    display: none;
 }
 .reel{
     height: 100%;
     width: 100%;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
 }
-.reel-img{
+
+video{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    position: relative;
     object-fit: cover;
+
+
+    
+
 }
+
 
 .bottom{
     width: 100%;
@@ -78,11 +101,19 @@ section{
 .right{
     transform: translate(100%);
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 20%;
+    top: 50%;
     padding: 2rem;
+}
+
+.rgt-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .right i{
    font-size: 1.4rem
 }
+
