@@ -142,7 +142,7 @@ function rele() {
     sum =
       sum +
       ` <div class="reel">
-                    <video src="${elem.video}"></video>
+                    <video autoplay loop muted src="${elem.video}"></video>
 
                     <div class="bottom">
                         <div class="user">
