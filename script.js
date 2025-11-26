@@ -192,4 +192,26 @@ function rele() {
   });
 }
 
+rele();
 
+allReels.addEventListener("click", function (dets) {
+  if (dets.target.classList.contains("ri-heart-3-line") || dets.target.classList.contains("ri-heart-fill")) {
+    if (!reels[dets.target.id].isLiked) {
+      reels[dets.target.id].likes++;
+      reels[dets.target.id].isLiked = true;
+    } else {
+      reels[dets.target.id].likes--;
+      reels[dets.target.id].isLiked = false;
+    }
+  }
+
+  if (dets.target.className == "follow-btn") {
+    if (!reels[dets.target.id].isFollowed) {
+      reels[dets.target.id].isFollowed = true;
+    } else {
+      reels[dets.target.id].isFollowed = false;
+    }
+  }
+
+  rele();
+});
