@@ -93,9 +93,10 @@ video{
 }
 
 .user button{
-    padding: 0.2rem 0.4rem;
-    border: none;
-    border-radius: 2rem;
+    background: transparent;
+    border: 0.1rem solid rgb(142, 133, 133);
+    color: white;
+    
 }
 
 .right{
@@ -115,5 +116,9 @@ video{
 
 .right i{
    font-size: 1.4rem
+}
+
+.ri-heart-fill {
+    color: red;
 }
 
